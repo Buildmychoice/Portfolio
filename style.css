@@ -210,11 +210,6 @@ a:hover {
   font-weight: 400;
   color: #ffffff;
   cursor: pointer;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  column-gap: 0.5rem;
 }
 
 .secondary-button:hover {
@@ -573,7 +568,7 @@ a:hover {
   .hero-section {
     width: 100%;
     height: auto;
-    padding-top: 4.25rem;
+    padding-top: 12.25rem;
     display: flex;
     flex-direction: column;
     justify-content: start;
