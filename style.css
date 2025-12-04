@@ -742,11 +742,15 @@ a:hover {
     height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     column-gap: 0.75rem;
     flex-wrap: wrap;
     row-gap: 0.75rem;
+  }
+
+  .primary-button.hero {
+    display: none;
   }
 
   .divider {
@@ -853,6 +857,10 @@ a:hover {
     color: #ffffff;
     text-align: center;
     line-height: 140%;
+  }
+
+  .primary-button.cta {
+    display: none;
   }
 
   .footer-elements-container {
