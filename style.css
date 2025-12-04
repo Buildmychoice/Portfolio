@@ -66,7 +66,7 @@ body {
 }
 
 .right-container {
-  width: fit-content;
+  width: auto;
   height: auto;
   display: flex;
   flex-direction: row;
@@ -87,6 +87,7 @@ a:hover {
 }
 
 .primary-button {
+  width: auto;
   height: 48px;
   padding: 0.625rem 1.5rem;
   background-color: #ff4400;
@@ -560,14 +561,7 @@ a:hover {
 
 @media screen and (max-width: 1024px) {
   .header-section {
-    width: 100%;
-    height: auto;
     padding: 1.5rem 2.25rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1.5px dotted #2b2b2b;
   }
 
   .hero-section {
@@ -698,14 +692,7 @@ a:hover {
 
 @media screen and (max-width: 750px) {
   .header-section {
-    width: 100%;
-    height: auto;
     padding: 1rem 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px dotted #2b2b2b;
   }
 
   .hero-section {
@@ -859,10 +846,6 @@ a:hover {
     line-height: 140%;
   }
 
-  .primary-button.cta {
-    display: none;
-  }
-
   .footer-elements-container {
     width: 100%;
     height: auto;
@@ -899,7 +882,7 @@ a:hover {
     display: none;
   }
 
-  .right-container a {
+  .right-container .link {
     display: none;
   }
 }
@@ -1107,7 +1090,7 @@ a:hover {
     display: none;
   }
 
-  .right-container a {
+  .right-container .link {
     display: none;
   }
 }
@@ -1275,7 +1258,7 @@ a:hover {
     display: none;
   }
 
-  .right-container a {
+  .right-container .link {
     display: none;
   }
 }
