@@ -300,6 +300,7 @@ a:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  display: none;
 }
 
 .project-name {
