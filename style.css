@@ -107,10 +107,16 @@ a:hover {
   justify-content: center;
   align-items: center;
   column-gap: 0.5rem;
+  font-weight: 400;
 }
 
 .primary-button:hover {
   background-color: #cf3c02;
+}
+
+.chat-icon-container {
+  width: 20px;
+  height: 20px;
 }
 
 .button-icon-container {
@@ -234,6 +240,15 @@ a:hover {
   justify-content: center;
   align-items: center;
   column-gap: 0.5rem;
+  font-weight: 400;
+}
+
+.button-icon-container {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .divider {
