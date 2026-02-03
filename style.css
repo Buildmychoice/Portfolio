@@ -907,6 +907,7 @@ a:hover {
     height: auto;
     background-color: #2b2b2b;
     border-radius: 0.5rem;
+    overflow: hidden;
   }
 
   .testimonial-section {
@@ -1119,6 +1120,7 @@ a:hover {
     height: auto;
     background-color: #2b2b2b;
     border-radius: 0.5rem;
+    overflow: hidden;
   }
 
   .testimonial-section {
@@ -1291,6 +1293,7 @@ a:hover {
     height: auto;
     background-color: #2b2b2b;
     border-radius: 0.5rem;
+    overflow: hidden;
   }
 
   .testimonial-section {
