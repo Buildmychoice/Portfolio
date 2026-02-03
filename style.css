@@ -822,6 +822,10 @@ a:hover {
     row-gap: 1rem;
     color: #888888;
   }
+
+  .modal-content {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -1027,6 +1031,10 @@ a:hover {
 
   .right-container .link {
     display: none;
+  }
+
+  .modal-content {
+    width: 70%;
   }
 }
 
@@ -1236,6 +1244,15 @@ a:hover {
 
   .right-container .link {
     display: none;
+  }
+
+  .modal-content {
+    width: 90%;
+    padding: 2rem 1.5rem;
+  }
+
+  .text-wrappers h2 {
+    font-size: 1.25rem;
   }
 }
 
