@@ -16,6 +16,11 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.no-scroll {
+  overflow: hidden !important;
+  height: 100vh;
+}
+
 .page-container {
   width: 100%;
   height: auto;
@@ -122,6 +127,112 @@ a:hover {
 .button-icon-container {
   width: 20px;
   height: 20px;
+}
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-overlay-visible {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #191919;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+.close-modal-button {
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25rem;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+  background-color: #191919;
+}
+
+.close-modal-button:hover {
+  background-color: #2b2b2b;
+}
+
+.close-modal-button svg path {
+  transition: stroke 0.2s ease-in-out;
+}
+
+.close-modal-button:hover svg path {
+  stroke: #ffffff;
+}
+
+.text-wrappers {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.5rem;
+}
+
+.text-wrappers h2 {
+  font-size: clamp(1.2rem, 1.5vw + 1rem, 1.5rem);
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+}
+
+.text-wrappers p {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #AAAAAA;
+  text-align: center;
+  line-height: 150%;
+}
+
+.buttons-wrapper {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.75rem;
+}
+
+.buttons-wrapper .secondary-button {
+  width: 100%;
 }
 
 .hero-section {
@@ -299,6 +410,7 @@ a:hover {
   height: 600px;
   background-color: #2b2b2b;
   border-radius: 0.5rem;
+  overflow: hidden;
 }
 
 .project-image img {
@@ -306,6 +418,11 @@ a:hover {
   height: 100%;
   border-radius: 0.5rem;
   object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-image:hover img {
+  transform: scale(1.05);
 }
 
 .project-details {
